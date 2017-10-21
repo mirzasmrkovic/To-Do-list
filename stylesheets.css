@@ -1,0 +1,174 @@
+body {
+	display: flex;
+	justify-content: center;
+	font-family: arial;
+}
+
+#todoList {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	background-color: #eef5f5;
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+#naslov {
+	font-size: 20pt;
+	margin-bottom: 10px;
+}
+
+#header {
+	background-color: #3bc09c;
+	padding-left: 40px;
+	padding-right: 40px;
+	display: flex;
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+	box-shadow: 1px 2px 10px 0px rgba(148, 133, 148, 0.3);
+	position: absolute;
+}
+
+.addButton {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+	border-radius: 50px;
+	height: 40px;
+	width: 40px;
+	margin: auto 0px auto -25px;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+.addButton:hover {
+	box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.75);
+	cursor: pointer;
+	background-color: #62cdb0;
+}
+
+.addButton:hover img {
+	filter: brightness(0) invert(1);
+}
+
+#input {
+	background-color: #62cdb0;
+	width: 285px;
+	height: 40px;
+	border-radius: 5px;
+	border-top-right-radius: 30px;
+	border-bottom-right-radius: 30px;
+	margin: 15px auto;
+	outline: none;
+	border: none;
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+	padding-left: 15px;
+}
+
+#input:focus {
+	background-color: #eef5f5;
+
+}
+
+#itemContainer, #finishedToDos {
+	margin-top: 60px;
+	padding: 20px 40px;
+	border: 2px black;
+}
+
+#noToDos{
+	color: #989898;
+	margin-bottom: 40px;
+}
+
+.items {
+	padding: 5px;
+	width: 300px;
+	height: 40px;
+	margin-bottom: 10px;
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.whatToDo {
+	font-size: 10pt;
+	margin-left: 10px;
+}
+
+.itemButtons {
+	display: flex;
+}
+
+.trash {
+	border-right: 1px solid rgba(80, 80, 80, 0.3);
+	padding-right: 7px;
+	padding-left: 7px;
+}
+
+.notChecked, .checked {
+	width: 20px;
+	height: 20px;
+	border: 2px solid rgb(59, 192, 156);
+	border-radius: 20px;
+	margin-right: 7px;
+	margin-left: 7px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.trashHover {
+	display: none;
+}
+
+.trash:hover .trashNonHover {
+	display: none;
+}
+
+.trash:hover .trashHover {
+	display: block;
+}
+
+.notChecked:hover, .checked {
+	background-color: #3bc09c;
+}
+
+.notChecked:hover, .trash:hover, .checked {
+	cursor: pointer;
+}
+
+.notChecked:hover img, .checkedImg {
+	filter: brightness(0) invert(1);
+}
+
+.seperator {
+	width: 60%;
+	border-top: 1px solid rgba(152, 152, 152, 0.7);
+}
+
+.buttons {
+	width: 395px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: -20px;
+	border-top-right-radius: 5px; 
+	border-top-left-radius: 5px; 
+	background-color: #3bc09c; 
+	display: flex;
+	justify-content: space-between;
+}
+
+.revealButtons {
+	padding: 10px;
+	background-color: #62cdb0;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+	color: #555;
+}
+
+.revealButtons:hover {
+	cursor: pointer;
+	box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
